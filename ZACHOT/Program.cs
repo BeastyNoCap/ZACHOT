@@ -10,8 +10,20 @@ namespace ZACHOT
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"{GetZ (1, 2, 3, 4)}");
-            Console.ReadKey();
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("Введите A");
+                double A = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Введите B");
+                double B = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Введите C");
+                double C = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Введите D");
+                double D = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"Результат = {GetZ(A, B, C, D)}");
+                Console.ReadKey();
+            }
         }
         public static double GetZ(double A, double B, double C, double D)
         {
